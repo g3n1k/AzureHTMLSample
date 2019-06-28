@@ -1,5 +1,7 @@
 <?php
-   if (isset($_POST['submit'])) {
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+	if (isset($_POST['submit'])) {
     try {
         $id     = $_POST['id']
         $nama   = $_POST['name'];
