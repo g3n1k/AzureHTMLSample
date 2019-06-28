@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="container">
-        <form class="well form-horizontal" action="save.php">
+        <form class="well form-horizontal" action="save.php" method="POST">
 <?php
 
 require_once "func.php";
@@ -69,8 +69,14 @@ if(isset($_GET['id'])){
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input name="phone" placeholder="Phone Number" class="form-control" required="true" value="<?php echo @if_empty($konsumen['Phone'],'');?>" type="text"></div>
                 </div>
                 </div>
+                <div class="form-group">
+                <label class="col-md-4 control-label"><input type='submit' value='Simpan' name='submit' class='btn btn-success btn-sm' /></label>
+                <div class="col-md-8 inputGroupContainer">
+                
+                </div>
+                </div>
             </fieldset>
-            <input type='submit' value='Simpan' name='submit' class='btn btn-success btn-sm' />
+            
         </form>
     </div>
 </body>
